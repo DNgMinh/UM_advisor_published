@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.chat-container {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-options {
+    margin-top: 20px;
+}
+
+
+#chat-box {
+    height: 600px; /* Increase the chat window height */
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Chat message container */
+.chat-message {
+    display: flex;
+    /* display: grid; */
+    width: 100%; /* Ensure full width */
+    margin: 8px 0;
+    text-align: left;
+}
+
+/* User messages align to the right */
+.chat-message.right {
+    justify-content: flex-end;
+    /* justify-content: end; */
+    /* text-align: right; */
+    /* align-items: flex-end; */
+}
+
+/* Bot messages align to the left */
+.chat-message.left {
+    justify-content: flex-start;
+    /* justify-content: start; */
+    /* text-align: left; */
+    /* align-items: flex-start; */
+}
+
+/* Styling the message bubbles */
+.message-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    word-wrap: break-word;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+}
+
+/* Corrected User message style */
+.chat-message.right .message-bubble {
+    background-color: #007bff;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+/* Corrected Bot message style */
+.chat-message.left .message-bubble {
+    background-color: #e9ecef;
+    color: black;
+    border-bottom-left-radius: 5px;
+}
+
+/* Clear button styling */
+.clear-btn {
+    /* padding: 10px 15px; */
+    background-color: #dc3545;
+    color: white;
+    /* border: none; */
+    /* border-radius: 50%; */
+    /* font-size: 16px; */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+} 

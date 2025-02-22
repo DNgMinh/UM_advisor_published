@@ -1,0 +1,53 @@
+components/instruction2.txt
+
+*.mp4
+frontend/GUI.py
+
+# Virtual environment
+venv/
+env/
+*.dylib
+*.so
+
+# Database files
+*.db
+# vectors.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Large data files
+data/*
+!data/.gitkeep
+
+# Dependencies
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+.env
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST

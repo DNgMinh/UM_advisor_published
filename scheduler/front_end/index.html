@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Scheduler</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <h1 style="display: inline;">Aurora Scheduler</h1>
+    <a href="README.html" target="_blank" style="display: inline;">README</a>
+    <br><br>
+    <!-- <button onclick="window.open('README.md')">View README</button> -->
+
+    <div class="form">
+        <form id="courseForm">
+            <div>
+                <label for="term">Enter term:</label>
+                <input type="text" id="term" name="term" required placeholder="e.g., Winter2024, Fall2024">
+                <!-- e.g., Winter2024, Fall2024 -->
+            </div>
+            <div>
+                <label for="courses">Enter courses (space-separated):</label>
+                <input type="text" id="courses" name="courses" required placeholder="e.g., COMP1010 MATH1240 STAT2150 ENG1450">
+                <!-- e.g., COMP1010 MATH1240 STAT2150 ENG1450 -->
+            </div>
+            <div>
+                <button type="button", id ="submit">Submit</button>
+            </div>
+        </form>
+        <div id="loading1" style="display:none">Loading...</div>
+        <div id="error"></div>
+    </div>
+    
+
+    <!-- <div id="ways"></div>
+    <div id="smallestTimeGap"></div> -->
+    <!-- <div id="best_class_list"></div> -->
+
+    <h2>Schedule Table</h2>
+    
+    <div id="ways"></div>
+    <div id="smallestTimeGap"></div>
+    <br>
+
+    <div id="scheduleInfo1"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="test"></th> <!-- Empty cell for spacing -->
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody class = "newTable">
+        </tbody>
+    </table>
+
+    <div class="navigatingButtons">
+        <div>
+            <button id="return1">Return</button>
+        </div>
+        <!-- <button id="return1">Return</button> -->
+        <div class="buttonsNextPrev">
+            <button id="prevSchedule1">&lt;</button>
+            <button id="nextSchedule1">&gt;</button>
+            <!-- Navigating between schedule options -->
+        </div>
+        <div>
+            <button id="retrieveCRNs">Retrieve CRNs</button>
+        </div>
+    </div>
+
+    <div id="popupCRNs" class="popup-overlay">
+        <div class="popup-content">
+            <h2>CRNs list of this schedule:</h2>
+            <div id="CRNsList"></div>
+            <button id="okPopup">OK</button>
+        </div>
+    </div>
+
+    <!-- <br> -->
+    <!-- <div>
+        <button id="return1">Return</button>
+        Return to the first (best) option
+    </div> -->
+
+    <!-- <h2>Schedule customization</h2> -->
+    <h3>Customization</h3>
+
+    <div class="form2">
+        <form id="customizationForm">
+            <!-- <div class="customization">
+                <div>
+                    <label for="weekDay">Select day that you want to customize time:</label>
+                    <select name="weekDay" class="weekDay">
+                        <option value="M">Monday</option>
+                        <option value="T">Tuesday</option>
+                        <option value="W">Wednesday</option>
+                        <option value="R">Thursday</option>
+                        <option value="F">Friday</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dayTime">Select time that you do not want to have class:</label>
+                    <select name="dayTime" class="dayTime">
+                        <option value="customize">Customize</option>
+                        <option value="allday">All day</option>
+                        <option value="morning">Morning (08:00 am-11:00 am)</option>
+                        <option value="midday">Midday (11:00 am-01:00 pm)</option>
+                        <option value="afternoon">Afternoon (01:00 pm-17:00 pm)</option>
+                        <option value="evening">Evening (17:00 pm-22:00 pm)</option>           
+                    </select>
+                </div>
+                <div class="customTime_div">
+                    <label for="customTime">Enter time that you do not want to have class (format: '08:00 am-11:00 am'):</label>
+                    <input type="text" name="customTime" class="customTime">
+                    e.g., 11:00 am-03:00 pm
+                </div>
+                <br>
+            </div> -->
+        </form>
+
+        <div>
+            <button type="button", id ="removeCustomization">Remove customization</button>
+        </div>
+        <div>
+            <button type="button", id ="addCustomization">Add customization</button>
+        </div>
+        <br>
+        <div>
+            <button type="button", id ="done">Customized</button>
+        </div>
+        <div id="loading2" style="display:none">Loading...</div>
+        <!-- <div id="error2"></div> -->
+    </div>
+
+    <!-- <div id="customizedWays"></div>
+    <div id="smallestCustomizedTimeGap"></div>
+    <div id="best_customized_class_list"></div> -->
+
+    <!-- <h3>Customized Schedule Table</h3>
+
+    <div id="scheduleInfo2"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>  Empty cell for spacing 
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody class = "myCustomizedTable">
+        </tbody>
+    </table>
+
+    <div>
+        <button id="prevSchedule2">&lt;</button>
+        <button id="nextSchedule2">&gt;</button>
+        Navigating between schedule options
+    </div>
+    <br>
+    <div>
+        <button id="return2">Return</button>
+        Return to the first (best) option
+    </div> -->
+
+</body>
+</html>

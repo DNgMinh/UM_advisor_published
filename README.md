@@ -2,7 +2,7 @@
 
 ## Academic Advisor Hackathon Project  
 
-This project is still in development. Once completed, it will be publicly available as a web app, and technical details will be shared.
+**This project is still in development. Once completed, it will be publicly available as a web app, and technical details will be shared.**
 
 ### Inspiration  
 Our team was inspired by the challenges students face when seeking academic guidance. Sometimes, students feel lazy to book an appointment, and for general questions that aren’t situation-specific, researching UM websites and documents can be time-consuming. This advisor chatbot aims to provide quick and accessible answers, making academic planning more efficient.

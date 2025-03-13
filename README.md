@@ -53,3 +53,9 @@ One of the main challenges was integrating the backend with the frontend smoothl
 ```
 
 Open `index.html` as a live server in your browser.
+
+## Contributors
+- [Duc Do](https://github.com/ducdonghiem)
+- [Minh Do](https://github.com/DNgMinh)
+- [Tausif](https://github.com/photonicslice)
+- [Dinh Nhat](https://github.com/DinhNhat11) 
